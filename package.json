@@ -1,0 +1,26 @@
+{
+  "name": "prisma-generator-template",
+  "description": "Template for Prisma Generators",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "prepare": "husky install"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^17.6.7",
+    "@commitlint/config-conventional": "^17.6.7",
+    "husky": "^8.0.3"
+  },
+  "license": "MIT",
+  "homepage": "https://cloudservice.io",
+  "author": "Clayton Marinho e Silva <clayton@cloudservice.io>",
+  "keywords": [
+    "prisma",
+    "generator",
+    "template",
+    "node",
+    "typescript"
+  ]
+}
