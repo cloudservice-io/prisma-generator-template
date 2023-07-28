@@ -1,3 +1,10 @@
+## [1.0.3](https://github.com/cloudservice-io/prisma-generator-template/compare/v1.0.2...v1.0.3) (2023-07-28)
+
+
+### Bug Fixes
+
+* last README.md amend for today ([6ae31a1](https://github.com/cloudservice-io/prisma-generator-template/commit/6ae31a1c1db2e95d1864e0ffaf1482fcf57bf261))
+
 ## [1.0.2](https://github.com/cloudservice-io/prisma-generator-template/compare/v1.0.1...v1.0.2) (2023-07-28)
 
 

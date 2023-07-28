@@ -1,7 +1,7 @@
 {
   "name": "prisma-generator-template",
   "description": "Template for Prisma Generators",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "private": true,
   "workspaces": [
     "packages/*"
