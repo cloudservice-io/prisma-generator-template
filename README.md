@@ -12,20 +12,20 @@ I wanted to have something similar to "create-prisma-generator" but as a templat
 
 1. **Clone this template**
 
-2. **Name your generator**: Replace the example name with the name of your custom generator
+2. **Name your generator**: Replace the example name
 
 ![Screenshot 2023-07-27 at 19 44 25](https://github.com/cloudservice-io/prisma-generator-template/assets/904124/4ce1d57a-373b-44a2-adb4-0e5e5fc032ed)
 
-2. **Implement logic**: Replace the example code in `packages/generator` with your custom generator logic.
+3. **Implement logic**: Replace the example code in [packages/generator](https://github.com/cloudservice-io/prisma-generator-template/blob/main/packages/generator/src/generator.ts#L23) with your custom generator logic.
 
-3. **Test**: Test your generator code
+4. **Test**: Test your generator code
 
 ```
 $ cd packages/generator;
 $ npm t
 ```
 
-4. **CI**: Make sure you have disabled `CI_template` workflow and that `CI` is activated (if you want CI for publishing your generator package).
+5. **CI**: Make sure you have disabled `CI_template` workflow and that `CI` is activated (if you want CI for publishing your generator package).
 
 ## Contribution
 
