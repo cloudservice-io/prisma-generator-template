@@ -1,4 +1,4 @@
-name: CI
+name: Template CI
 on:
   push:
     branches:
@@ -7,7 +7,7 @@ on:
     branches:
       - '*'
 jobs:
-  Test:
+  Test generator:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
@@ -31,7 +31,7 @@ jobs:
       - name: Run Tests 🧪
         working-directory: ./packages/generator
         run: npm run test
-  Publish:
+  Release template version:
     runs-on: ubuntu-latest
     needs:
       - Test
@@ -49,8 +49,8 @@ jobs:
           key: ${{ runner.os }}-modules-${{ hashFiles('**/package-lock.json') }}
       - name: Install dependencies
         run: npm ci
-      - name: Publish 🚀
-        working-directory: ./packages/generator
+      - name: Semantic release 🚀
+        working-directory: ./
         run: npx semantic-release
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}

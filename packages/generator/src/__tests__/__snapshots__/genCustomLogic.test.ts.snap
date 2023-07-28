@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`enum generation 1`] = `
+exports[`check output 1`] = `
 {
   "enums": {
     "Language": [
