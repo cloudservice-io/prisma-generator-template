@@ -21,7 +21,6 @@ generatorHandler({
     logger.info(`${GENERATOR_NAME}@${version} -> Generating`);
 
     // Replace the logic below with your own logic
-
     const results = genCustomLogic(options.dmmf);
 
     const writeLocation = path.join(
