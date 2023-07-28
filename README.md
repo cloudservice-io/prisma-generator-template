@@ -22,12 +22,17 @@ $ npm t
 
 ```
 
-4. **CI**: Make sure you have disabled `CI_template` workflow and that `CI`` is activated (if you want CI for publishing your generator package).
+4. **CI**: Make sure you have disabled `CI_template` workflow and that `CI` is activated (if you want CI for publishing your generator package).
 
 ## Contribution
 
 Contributions to improve the **Prisma Generator Template** are welcome! If you encounter any issues, have suggestions, or want to add new features, feel free to open an issue or submit a pull request.
 
+## History
+
+See [CHANGELOG.md](CHANGELOG.md)
+
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
+
