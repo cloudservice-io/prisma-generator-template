@@ -22,7 +22,7 @@ $ npm t
 
 ```
 
-4. **CI**: Make sure to disable CI_template workflow and that CI is activated (if you want CI for publishing your generator package).
+4. **CI**: Make sure you have disabled `CI_template` workflow and that `CI`` is activated (if you want CI for publishing your generator package).
 
 ## Contribution
 

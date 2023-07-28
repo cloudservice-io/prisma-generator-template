@@ -7,7 +7,7 @@ on:
     branches:
       - '*'
 jobs:
-  Test generator:
+  Test_generator:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
@@ -31,10 +31,10 @@ jobs:
       - name: Run Tests 🧪
         working-directory: ./packages/generator
         run: npm run test
-  Release template version:
+  Release_template_version:
     runs-on: ubuntu-latest
     needs:
-      - Test
+      - Test_generator
     if: ${{ github.ref == 'refs/heads/main' }}
     steps:
       - uses: actions/checkout@v3
