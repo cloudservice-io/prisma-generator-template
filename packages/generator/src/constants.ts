@@ -1,1 +1,1 @@
-export const GENERATOR_NAME = 'prisma-generator-your-custom-generator'
+export const GENERATOR_NAME = 'prisma-generator-your-custom-generator';

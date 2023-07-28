@@ -1,10 +1,8 @@
-import { genEnum } from '../helpers/genEnum'
-import { getSampleDMMF } from './__fixtures__/getSampleDMMF'
+import { getSampleDMMF } from './__fixtures__/getSampleDMMF';
+import { genCustomLogic } from '../helpers/genCustomLogic';
 
-test('enum generation', async () => {
-  const sampleDMMF = await getSampleDMMF()
+test('check output', async () => {
+  const sampleDMMF = await getSampleDMMF();
 
-  sampleDMMF.datamodel.enums.forEach((enumInfo) => {
-    expect(genEnum(enumInfo)).toMatchSnapshot(enumInfo.name)
-  })
-})
+  expect(genCustomLogic(sampleDMMF)).toMatchSnapshot();
+});
